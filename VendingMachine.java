@@ -59,6 +59,9 @@ public class VendingMachine {
 	}
 
 	public void purchase(String guestSelection) {
+		if (! inventory.containsKey(guestSelection)) { 
+			System.out.println("Sorry that product does not exist, please choose a valid product");
+		} 
 		if (inventory.containsKey(guestSelection)) {
 			if (inventory.get(guestSelection).size() == 1) {
 				System.out.println("Sorry out of stock");
