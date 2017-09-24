@@ -25,16 +25,17 @@ public class StockReader {
 					if (stockImporterArray[0].contains("A")) {
 						List<Product> productArray = new ArrayList<>();
 						for (int i = 0; i < 6; i++) {
-							ChipProduct temp = new ChipProduct(stockImporterArray[1], new BigDecimal(stockImporterArray[2]));
+							ChipProduct temp = new ChipProduct(stockImporterArray[1],
+									new BigDecimal(stockImporterArray[2]));
 							productArray.add(temp);
 						}
 						vendingMachineInventory.put(stockImporterArray[0], productArray);
 
-
 					} else if (stockImporterArray[0].contains("B")) {
 						List<Product> productArray = new ArrayList<>();
 						for (int i = 0; i < 6; i++) {
-							CandyProduct temp = new CandyProduct(stockImporterArray[1], new BigDecimal(stockImporterArray[2]));
+							CandyProduct temp = new CandyProduct(stockImporterArray[1],
+									new BigDecimal(stockImporterArray[2]));
 							productArray.add(temp);
 						}
 						vendingMachineInventory.put(stockImporterArray[0], productArray);
@@ -43,7 +44,8 @@ public class StockReader {
 						List<Product> productArray = new ArrayList<>();
 						for (int i = 0; i < 6; i++) {
 
-							DrinkProduct temp = new DrinkProduct(stockImporterArray[1], new BigDecimal(stockImporterArray[2]));
+							DrinkProduct temp = new DrinkProduct(stockImporterArray[1],
+									new BigDecimal(stockImporterArray[2]));
 							productArray.add(temp);
 						}
 						vendingMachineInventory.put(stockImporterArray[0], productArray);
@@ -52,7 +54,8 @@ public class StockReader {
 						List<Product> productArray = new ArrayList<>();
 
 						for (int i = 0; i < 6; i++) {
-							GumProduct temp = new GumProduct(stockImporterArray[1], new BigDecimal(stockImporterArray[2]));
+							GumProduct temp = new GumProduct(stockImporterArray[1],
+									new BigDecimal(stockImporterArray[2]));
 							productArray.add(temp);
 						}
 						vendingMachineInventory.put(stockImporterArray[0], productArray);
